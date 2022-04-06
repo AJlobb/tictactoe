@@ -21,9 +21,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(160, 37, 37);
 }
-
+.App.game {
+  background-color: #61dafb;
+}
 .App-link {
   color: #61dafb;
 }

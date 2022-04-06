@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { Button, TextInput} from '@defencedigital/react-component-library'
 
 function Square(props) {
   return (
@@ -25,6 +26,24 @@ class Board extends React.Component {
     return (
       <div>
         <h1>TIC TAC TOE</h1>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h2>Who will be starting?</h2>
+        <Button>You</Button> <Button>Machine</Button>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <label htmlFor="CostChange">What is your name?</label>
+            <input type="name" id="nameofplayer" name="pname"></input>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -110,15 +129,22 @@ class Game extends React.Component {
 
     return (
       <div className="game">
+        
         <div className="game-board">
           <Board
             squares={current.squares}
             onClick={i => this.handleClick(i)}
           />
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="game-info">
           <div>{status}</div>
           <ol>{moves}</ol>
+          
         </div>
       </div>
     );
