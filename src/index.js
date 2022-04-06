@@ -41,9 +41,6 @@ class Board extends React.Component {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -59,6 +56,7 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
+        
       </div>
     );
   }
@@ -141,6 +139,7 @@ class Game extends React.Component {
         <br></br>
         <br></br>
         <br></br>
+        <h2>Move History</h2>
         <div className="game-info">
           <div>{status}</div>
           <ol>{moves}</ol>
